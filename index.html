@@ -1,89 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-body {font-family: Arial, Helvetica, sans-serif;}
-form {border: 3px solid #f1f1f1;}
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+    form {
+      border: 3px solid #f1f1f1;
+    }
 
-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
 
-button:hover {
-  opacity: 0.8;
-}
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
 
-.container {
-  padding: 16px;
-}
+    button:hover {
+      opacity: 0.8;
+    }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-</style>
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    div {
+      scale 2
+    }
+
+    
+  </style>
 </head>
+
 <body>
-
-<h2 style="text-align:center;">Login Form</h2>
+    <h2 style="text-align:center;">Login Form</h2>
     <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-        <button type="button" id="sub">Login</button>
-        <label>
-            <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
+      <button type="button" id="sub">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw">Forgot <a href="#">password?</a></span>
+      <button type="button" class="cancelbtn" id="cancel">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
 
-<script>
-  let pass = document.getElementById("psw")
-  let user = document.getElementById("uname")
-  document.getElementById("sub").onclick = function(){
-    if(user.value == "admin" && pass.value == "1234567890"){
-      window.location = "/home.html"
-    }else{
-      alert("Wrong username or password")
+  <script>
+    let pass = document.getElementById("psw")
+    let user = document.getElementById("uname")
+    document.getElementById("sub").onclick = function () {
+      if (user.value == "admin" && pass.value == "1234567890") {
+        window.location = "/home.html"
+      } else {
+        alert("Wrong username or password")
+      }
     }
+  </script>
+  <script>
+  document.getElementById("cancel").onclick = function(){
+    window.location = "https://imgoinginsane.darklord612.repl.co"
   }
 </script>
 
 
   <!-- yknow what ima rewrite the script -->
+  <!-- yo afk -->
+  <!-- ok so i made a repo ok nice cool git is making me go insane im going insane too-->
 </body>
+
 </html>
-<!-- lemme rework the html in the home page-->
-<!-- i fixed it -->
-<!-- yo gamer u should use flask sometime -->
-<!--i wanted to but im lazy lmao  -->
-<!--top ten flexbox  -->
-<!-- yo are u gonna scale this shit -->
-<!--dude idk lmao  -->
-<!-- yo gamer should i add this to github -->
-<!--huh   -->
-<!-- git should i add it or no -->
-<!--your decision btw the only thing i hate about replit is that they got the ram limit shit fr but atleast u aint usin ur real cpu ram and storage fair tho anyways ill add this shit to github -->
-<!-- dam ok -->
