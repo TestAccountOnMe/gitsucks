@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Page - ImGoingInsane</title>
+  <meta name="og:description" content="ImGoingInsane, made by margonnakillu and polynom1al">
+</head>
+<body>
+  <h2>Send Message to Discord Webhook</h2>
+  <input id="yay" placeholder="Feedback">
+  <button onclick="sendMessage()">Send Message</button>
+
+  <script>
+function sendMessage() {
+  const webhookUrl = 'https://discord.com/api/webhooks/1124989040106668083/nQK5ln3o4CpE29rM9aFHVQ-_RwbAWfXvuehEjjdWEhbsT0wWJDjpH0BvgDb94hgoP24l';
+
+  // Create the payload object
+  const payload = {
+    content: document.getElementById("yay").value,
+  };
+
+  // Send the HTTP POST request
+  fetch(webhookUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+  })
+    .then(response => {
+      if (response.ok) {
+        console.log('Message sent successfully');
+      } else {
+        console.error('Error sending message:', response.statusText);
+      }
+    })
+    .catch(error => {
+      console.error('Error sending message:', error);
+    });
+}
+
+  </script>
+
+  <!-- AMBATAKUM!!!!! -->
+</body>
+</html>

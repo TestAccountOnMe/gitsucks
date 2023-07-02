@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: contact.html
+Allow: home.html
+Allow: passforgot.html
+Allow: index.html
