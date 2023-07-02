@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <title>Key Generator - ImGoingInsane</title>
+  <meta name="og:description" content="ImGoingInsane, made by margonnakillu and polynom1al">
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
@@ -9,16 +11,6 @@
 
     form {
       border: 3px solid #f1f1f1;
-    }
-
-    input[type=text],
-    input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
     }
 
     button {
@@ -43,46 +35,69 @@
       float: right;
       padding-top: 16px;
     }
+
     div {
       scale 2
     }
 
-    
+    #keyDisplay {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    }
   </style>
 </head>
 
 <body>
-    <h2 style="text-align:center;">Login Form</h2>
-    <div class="container">
-      <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="placeholder@email.com" name="email" id="email" required>
+  <h2 style="text-align:center;">Key Generator</h2>
 
-      <button type="button" id="sub">Submit</button>
-    </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn" id="cancel">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
+  </div>
 
-  <script>
-    let pass = document.getElementById("psw")
-    let user = document.getElementById("uname")
-    document.getElementById("sub").onclick = function () {
-        document.getElementById("sub").innerHTML = "Email sent! Link will expire in 12 hours."
+  <div class="container" style="background-color:#f1f1f1">
+    <p id="keyDisplay"></p>
+
+    <p id="keyOutput"></p>
+
+
+    <button onclick="generateAndDisplayKey()">Generate Key</button>
+    <p id="keyDisplay"></p>
+    <button onclick="copyKeyToClipboard()">Copy</button>
+    <p>Note that this isn't <strong>REAL!</strong> This generator won't give you keys to anything, it is just a key
+      generator for fun and does <strong>NOTHING!</strong></p>
+
+    <script>
+      function generateKey() {
+        const words = ['apple', 'banana', 'orange', 'pineapple', 'watermelon'];
+        const key = words[Math.floor(Math.random() * words.length)];
+        return key
       }
-    }
-  </script>
-  <script>
-  document.getElementById("cancel").onclick = function(){
-    window.location = "https://imgoinginsane.darklord612.repl.co"
-  }
-</script>
 
+      function generateAndDisplayKey() {
+        const key = generateKey();
+        document.getElementById('keyDisplay').textContent = key;
+      }
 
-  <!-- yknow what ima rewrite the script -->
-  <!-- yo afk -->
-  <!-- ok so i made a repo ok nice cool git is making me go insane im going insane too-->
+      function copyKeyToClipboard() {
+        const key = document.getElementById('keyDisplay').textContent;
+        navigator.clipboard.writeText(key);
+      }
+    </script>
+  </div>
 </body>
 
 </html>
+<!-- watchu gon do -->
+<!-- it works -->
+<!-- yo im gonna copy the stuff now -->
+<!-- its at https://imgoinginsanefl.guliuspeelius.repl.co/ -->
+<!-- pro tip: the fl in imgoinginsanefl stands for flask -->
+<!-- gamer there are four buttons generate and generate key we dont have anymore use for generate -->
+<!-- back IT FUCKING WORKS -->
+<!--nvm -->
