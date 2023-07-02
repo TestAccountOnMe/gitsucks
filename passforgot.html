@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    form {
+      border: 3px solid #f1f1f1;
+    }
+
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      padding: 16px;
+    }
+
+    span.psw {
+      float: right;
+      padding-top: 16px;
+    }
+    div {
+      scale 2
+    }
+
+    
+  </style>
+</head>
+
+<body>
+    <h2 style="text-align:center;">Login Form</h2>
+    <div class="container">
+      <label for="email"><b>Username</b></label>
+      <input type="text" placeholder="placeholder@email.com" name="email" id="email" required>
+
+      <button type="button" id="sub">Submit</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" class="cancelbtn" id="cancel">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+
+  <script>
+    let pass = document.getElementById("psw")
+    let user = document.getElementById("uname")
+    document.getElementById("sub").onclick = function () {
+        alert("Wrong username or password")
+      }
+    }
+  </script>
+  <script>
+  document.getElementById("cancel").onclick = function(){
+    window.location = "https://imgoinginsane.darklord612.repl.co"
+  }
+</script>
+
+
+  <!-- yknow what ima rewrite the script -->
+  <!-- yo afk -->
+  <!-- ok so i made a repo ok nice cool git is making me go insane im going insane too-->
+</body>
+
+</html>
