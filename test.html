@@ -1,1 +1,13 @@
-1 + 1 - 2 + 48 / 2 - 8 + 69 - 68 + 54 = ?
+<button id="gen">Generate random word</button>
+<p id="word"></p>
+
+<script>
+  document.getElementById("gen").onclick = function(){
+    fetch("https://randomws.guliuspeelius.repl.co/api/rndm?token=_UYOHS7Bc0yQ1gXStdiTJbFkgqMP7KDfIO4w2xiOvRA")
+    .then(response => response.json())
+    .then(data => {
+      var word = data.word;
+      document.getElementById("word").innerHTML = word
+    });
+  }
+</script>

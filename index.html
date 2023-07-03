@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <title>Login - ImGoingInsane</title>
-  <meta name="og:description" content="ImGoingInsane, made by margonnakillu and polynom1al">
-  
+<meta name="og:description" content="ImGoingInsane, made by margonnakillu and polynom1al">
+
 <head>
   <style>
     body {
@@ -45,53 +45,50 @@
       float: right;
       padding-top: 16px;
     }
+
+
     div {
       scale 2
     }
-
-    
   </style>
 </head>
 
 <body>
-    <h2 style="text-align:center;">Login Form</h2>
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+  <h2 style="text-align:center;">Login Form</h2>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
-      <button type="button" id="sub">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+    <button type="button" id="sub">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" class="cancelbtn" id="cancel">Cancel</button>
-      <span class="psw">Forgot <a href="/passforgot.html">password?</a></span>
-      <span><a href="/contact.html">Give us feedback</a></span>
-    </div>
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" id="cancel">Cancel</button>
+    <span class="psw">Forgot <a href="/passforgot.html">password?</a></span>
+    <span><a href="/contact.html">Give us feedback</a></span>
+  </div>
 
   <script>
-    let pass = document.getElementById("psw")
-    let user = document.getElementById("uname")
-    document.getElementById("sub").onclick = function () {
-      if (user.value == "admin" && pass.value == "apple, banana, orange") {
-        window.location = "/home.html"
-      } else {
-        alert("Wrong username or password")
-      }
-    }
+    document.getElementById("sub").onclick = function ()  {
+      alert("Submitted!")
+        }
   </script>
   <script>
-  document.getElementById("cancel").onclick = function(){
-    window.location = "https://imgoinginsane.darklord612.repl.co"
-  }
-</script>
+      document.getElementById("cancel").onclick = function  ()  {
+        window.location = "https://imgoinginsane.darklord612.repl.co"
+      }
+    </script>
   <p style="color:grey">Keep in mind that this is all a test!</p>
+
+
 </html>
 
 <!-- should i do it -->
 <!--hm?  -->
+<!-- check out test.html i made a random word generator with fewer lines -->
